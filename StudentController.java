@@ -33,6 +33,7 @@ public class StudentController {
     @GetMapping
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
+        return new ResponseEntity<>(students, HttpStatus.OK);
     }
 
     // Get a single student by ID
