@@ -10,8 +10,8 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="students") // เปลี่ยนชื่อตารางเป็น students
-public class Student { // เปลี่ยนชื่อคลาสเป็น Student ให้สอดคล้องกับชื่อใหม่
+@Table(name="students") 
+public class Student { 
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
